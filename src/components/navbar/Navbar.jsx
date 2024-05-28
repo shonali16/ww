@@ -19,6 +19,7 @@ const Navbar = () => {
   
          <Link to="login"  className="link"><span>Sign In </span></Link> 
           <span>Become a seller</span>
+          <Link to="messages"  className="link"><span>Chat </span></Link> 
           <button> <Link to ="/register" className='link'>Join</Link></button>
         </div>
       </div>
