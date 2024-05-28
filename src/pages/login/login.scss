@@ -1,0 +1,55 @@
+// login.scss
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    background-color: #ffffff; // Light gray background color
+  
+    form {
+      width: 400px; // Fixed width for the form
+      padding: 20px;
+      background-color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Subtle shadow around the form
+  
+      h1 {
+        text-align: left;
+        margin-bottom: 30px; // Space between the title and inputs
+        font-size: 24px; // Larger font size for the title
+        color: #676767; // Darker color for the title
+      }
+  
+      label {
+        display: block;
+        margin-bottom: 10px; // Space below labels
+        color: #666; // Slightly lighter color for labels
+      }
+  
+      input[type="text"],
+      input[type="password"] {
+        width: 90%;
+        padding: 15px;
+        color: #666;
+        border: 1px solid #ccc; // Light border around inputs
+        border-radius: 4px; // Rounded corners for inputs
+        margin-bottom: 15px; // Space below inputs
+        font-size: 16px; // Standard font size for inputs
+      }
+  
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: #007BC3; // Primary blue color for the button
+        color: white; // White text color for contrast
+        border: none;
+        border-radius: 4px; // Rounded corners for the button
+        cursor: pointer;
+  
+        &:hover {
+          background-color: #0c4077; // Darker shade of blue on hover
+        }
+      }
+    }
+  }
+  

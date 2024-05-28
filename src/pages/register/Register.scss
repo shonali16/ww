@@ -1,0 +1,133 @@
+// Register.scss
+
+.register {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa; // Light background color for a clean look
+  
+    form {
+      display: flex; // Use flex for the form container
+      justify-content: space-between; // Space between the left and right divs
+      align-items: flex-start; // Align items to the start of the container
+      width: 80%; // Adjusts the form width to fit nicely on the screen
+      max-width: 800px; // Ensures the form does not get too wide on large screens
+      margin: auto; // Centers the form horizontally
+      padding: 40px;
+      background-color: white;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); // Adds a subtle shadow for depth
+  
+     .left,
+     .right {
+        width: 45%; // Each side takes up about half the form width minus some space for margins
+        padding-right: 20px; // Adds some space between the left and right sides
+        padding-left: 20px; // Consistent padding on both sides for symmetry
+  
+        h1 {
+          text-align: center;
+          margin-bottom: 30px; // Spacing under the heading
+          color: #676767; // Darker color for headings
+          font-size: 24px; // Larger font size for headings
+        }
+        .toggle {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+    
+            .switch {
+              position: relative;
+              display: inline-block;
+              width: 50px;
+              height: 24px;
+            }
+    
+            /* Hide default HTML checkbox */
+            .switch input {
+              opacity: 0;
+              width: 0;
+              height: 0;
+            }
+    
+            .slider {
+              position: absolute;
+              cursor: pointer;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-color: #ccc;
+              -webkit-transition: 0.4s;
+              transition: 0.4s;
+              border-radius: 24px;
+            }
+    
+            .slider:before {
+              position: absolute;
+              content: "";
+              height: 16px;
+              width: 16px;
+              left: 4px;
+              bottom: 4px;
+              background-color: white;
+              -webkit-transition: 0.4s;
+              transition: 0.4s;
+              border-radius: 50%;
+            }
+    
+            input:checked + .slider {
+              background-color: #2196f3;
+            }
+    
+            input:focus + .slider {
+              box-shadow: 0 0 1px #2196f3;
+            }
+    
+            input:checked + .slider:before {
+              -webkit-transform: translateX(26px);
+              -ms-transform: translateX(26px);
+              transform: translateX(26px);
+            }
+          }
+  
+        label {
+          display: block;
+          margin-bottom: 10px; // Spacing under labels
+          color: #676767; // Medium-dark grey for labels
+        }
+  
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="file"],
+        textarea {
+          width: 100%;
+          padding: 10px;
+          border: 1px solid #ced4da; // Light grey border
+          border-radius: 4px; // Rounded corners
+          margin-bottom: 20px; // Spacing under inputs
+          font-size: 14px; // Smaller font size for inputs
+        }
+  
+        button {
+          width: 100%;
+          padding: 12px;
+          background-color: #007bff; // Blue color for the button
+          color: white; // White text color for contrast
+          border: none;
+          border-radius: 4px; // Rounded corners
+          cursor: pointer;
+          font-size: 16px; // Slightly larger font size for the button
+  
+          &:hover {
+            background-color: #0056b3; // Darker shade of blue on hover
+          }
+        }
+      }
+  
+     .right {
+        // Additional styling for the right side if needed
+      }
+    }
+  }
+  
