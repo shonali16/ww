@@ -2,11 +2,13 @@ import React from 'react';
 import "./Navbar.scss";
 import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
-  return (
+
+  const {pathname} = useLocation()
+   return (
     <div className='navbar'>
       <div className="container">
         <div className="logo">
-          <Link to= "/">
+          <Link to= "/" className='link'>
              <span >WorkWave</span>
         </Link>
           
@@ -15,9 +17,9 @@ const Navbar = () => {
         </div>
         <div className="links">
   
-         <Link to="login"><span>Sign In </span></Link> 
+         <Link to="login"  className="link"><span>Sign In </span></Link> 
           <span>Become a seller</span>
-          <button><Link to ="/register">Join</Link></button>
+          <button> <Link to ="/register" className='link'>Join</Link></button>
         </div>
       </div>
       {/* <hr /> */}
