@@ -1,20 +1,26 @@
-import React from 'react'
+import React from 'react';
 import "./Navbar.scss";
+import { Link, useLocation } from "react-router-dom";
 const Navbar = () => {
   return (
     <div className='navbar'>
       <div className="container">
         <div className="logo">
-          <span className="text">WorkWave</span>
-          <div className="dot">.</div>
+          <Link to= "/">
+             <span >WorkWave</span>
+        </Link>
+          
+          {/* would add after */}
+       {/* <img src="../public/img/512.svg" alt="logo" className="text"/> */}
         </div>
         <div className="links">
-          <span>WorkWave Business</span>
-          <span>Sign in </span>
+  
+         <Link to="login"><span>Sign In </span></Link> 
           <span>Become a seller</span>
-          <button>Join</button>
+          <button><Link to ="/register">Join</Link></button>
         </div>
       </div>
+      {/* <hr /> */}
     </div>
   )
 }

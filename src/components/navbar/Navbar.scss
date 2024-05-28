@@ -1,0 +1,63 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #007BC3; /* WorkWave Blue */
+  
+    .container {
+        width: 1400px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+  
+    .logo {
+        font-size: 34px;
+        font-weight: bold;
+        color: #F7F7F7; /* Soft White */
+
+        a{
+            text-decoration: none;
+            color:#F7F7F7;
+        }
+    }
+  
+    .links {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        color: #F7F7F7; /* Soft White */
+        text-decoration: none; /* Removed underline */
+        a{
+            text-decoration: none;
+            color: #F7F7F7;
+        }
+        span {
+            white-space: nowrap;
+        }
+
+        
+    
+        
+      
+        button {
+            color: #F7F7F7; /* Soft White */
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 1px solid #F7F7F7; /* Soft White */
+            background-color: transparent;
+            cursor: pointer;
+          
+            &:hover {
+                background-color: #007BC3; /* Bright Teal */
+                border-color: #F7F7F7; /* Bright Teal */
+                text-decoration: none;
+            }
+        }
+      
+        hr {
+            display: none; /* Remove the line */
+        }
+    }
+}

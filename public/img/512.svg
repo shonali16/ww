@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 750 444.45">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-4 {
+        fill: #69d7f8;
+      }
+
+      .cls-4, .cls-5 {
+        font-family: LucidaSans, 'Lucida Sans';
+        font-size: 72px;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-6 {
+        clip-path: url(#clippath);
+      }
+
+      .cls-5 {
+        fill: #167bcd;
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-2" x="80.05" y="116.32" width="407" height="191"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="364.07" y1="858.92" x2="353.79" y2="793.07" gradientTransform="translate(0 -578)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38c3ba"/>
+      <stop offset=".2" stop-color="#3ab1b9"/>
+      <stop offset=".4" stop-color="#4187be"/>
+      <stop offset=".5" stop-color="#4677cd"/>
+      <stop offset=".9" stop-color="#234ac4"/>
+      <stop offset="1" stop-color="#1e44c3"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="485.8" y1="1066.28" x2="471.68" y2="976.27" gradientTransform="translate(5.08 -457.61) rotate(-2.2) scale(.8 .7)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#38c3ba"/>
+      <stop offset=".2" stop-color="#3ab1b9"/>
+      <stop offset=".4" stop-color="#4187be"/>
+      <stop offset=".5" stop-color="#4677cd"/>
+      <stop offset=".9" stop-color="#234ac4"/>
+      <stop offset="1" stop-color="#1e44c3"/>
+    </linearGradient>
+  </defs>
+  <text class="cls-4" transform="translate(298.31 245.88)"><tspan x="0" y="0">W</tspan></text>
+  <text class="cls-4" transform="translate(398.03 245.88)"><tspan x="0" y="0">v</tspan></text>
+  <g class="cls-6">
+    <g>
+      <path class="cls-1" d="M312.35,245.09s25.19,12.28,39.4-18.25c4.11,5.53,36.09,24.22,52.53,16.15-15.72,10.62-59.59,17.36-91.93,2.1h0Z"/>
+      <path class="cls-3" d="M339.51,252.28s42.61,8.52,65.57-18.8c7.06,4.42,61.02,17.81,88.35,9.62-26,10.29-99.43,19.58-153.93,9.07h0v.11Z"/>
+    </g>
+  </g>
+  <text class="cls-5" transform="translate(122.39 245.88)"><tspan x="0" y="0">Work</tspan></text>
+  <text class="cls-4" transform="translate(359.73 247.6)"><tspan x="0" y="0">a</tspan></text>
+  <text class="cls-4" transform="translate(434.79 245.88)"><tspan x="0" y="0">e</tspan></text>
+</svg>
