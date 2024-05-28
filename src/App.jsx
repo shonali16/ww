@@ -8,6 +8,8 @@ import Footer from "./components/footer/Footer";
 import Messages from "./pages/messages/Messages";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
+import AboutUs from "./pages/aboutus/AboutUs";
+
 function App() {
 
   const Layout = () =>{
@@ -40,6 +42,10 @@ function App() {
         {
           path: "/register",
           element: <Register/>
+        },
+        {
+          path: "/aboutus",
+          element: <AboutUs/>
         }
       ]
     }
