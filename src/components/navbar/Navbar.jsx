@@ -13,7 +13,7 @@ const Navbar = () => {
         </Link>
           
           {/* would add after */}
-       {/* <img src="../public/img/512.svg" alt="logo" className="text"/> */}
+       {/* <img src="../pg/hahaublic/imha.jpg" alt="logo" className="text"/> */}
         </div>
         <div className="links">
         <Link to="/aboutus"  className="link"><span>About Us </span></Link> 
