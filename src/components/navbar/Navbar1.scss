@@ -1,0 +1,56 @@
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: #F7F7F7; /* WorkWave Blue */
+  
+    .container {
+        width: 1400px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+    }
+  
+    .logo {
+        font-size: 34px;
+        font-weight: bold;
+        color:#007BC3;
+
+    }
+  
+    .links {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        color: #007BC3;/* Soft White */
+        text-decoration: none; /* Removed underline */
+      
+        span {
+            white-space: nowrap;
+        }
+
+        
+    
+        
+      
+        button {
+            color: #007BC3; /* Soft White */
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: 1px solid #007BC3;/* Soft White */
+            background-color: transparent;
+            cursor: pointer;
+          
+            &:hover {
+                background-color: #007BC3; /* Bright Teal */
+                border-color: #F7F7F7; /* Bright Teal */
+           color:#F7F7F7;
+            }
+        }
+      
+        hr {
+            display: none; /* Remove the line */
+        }
+    }
+}

@@ -1,62 +1,98 @@
-import React from "react";
 import "./app.scss";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
-
-import Home from "./pages/home/Home";
+import React from "react";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
-import Messages from "./pages/messages/Messages";
+import Home from "./pages/home/Home";
+import Gigs from "./pages/gigs/Gigs";
+import Gig from "./pages/gig/Gig";
 import Login from "./pages/login/Login";
 import Register from "./pages/register/Register";
-import AboutUs from "./pages/aboutus/AboutUs";
-
+import Add from "./pages/add/Add";
+import Orders from "./pages/orders/Orders";
+import Messages from "./pages/messages/Messages";
+import Message from "./pages/message/Message";
+import MyGigs from "./pages/myGigs/MyGigs";
+import Aboutus from "./pages/aboutus/AboutUs";
+import {
+  QueryClient,
+  QueryClientProvider,
+} from "@tanstack/react-query";
+// import Pay from "./pages/pay/Pay";
+// import Success from "./pages/success/Success";
 function App() {
+  const queryClient = new QueryClient();
 
-  const Layout = () =>{
+  const Layout = () => {
     return (
       <div className="app">
-      <Navbar/>
-      <Outlet/>
-      <Footer/>
-      </div>  
-    )
-  }
+        <QueryClientProvider client={queryClient}>
+          <Navbar />
+          <Outlet />
+          <Footer />
+        </QueryClientProvider>
+      </div>
+    );
+  };
+
   const router = createBrowserRouter([
     {
-      path:"/",
-      element: <Layout/>, 
+      path: "/",
+      element: <Layout />,
       children: [
         {
-          path:"/",
-          element:<Home/>,
-        }
-        ,
-        {
-          path: "/messages",
-          element: <Messages/>
+          path: "/",
+          element: <Home />,
         },
         {
-          path: "/login",
-          element: <Login/>
+          path: "/gigs",
+          element: <Gigs />,
+        },
+        {
+          path: "/myGigs",
+          element: <MyGigs />,
+        },
+        {
+          path: "/orders",
+          element: <Orders />,
+        },
+        {
+          path: "/messages",
+          element: <Messages />,
+        },
+        {
+          path: "/message/:id",
+          element: <Message />,
+        },
+        {
+          path: "/add",
+          element: <Add />,
+        },
+        {
+          path: "/gig/:id",
+          element: <Gig />,
         },
         {
           path: "/register",
-          element: <Register/>
+          element: <Register />,
+        },
+        {
+          path: "/login",
+          element: <Login />,
         },
         {
           path: "/aboutus",
-          element: <AboutUs/>
-        }
-      ]
-    }
-  ])
+          element: <Aboutus/>,
+        },
+        // {
+        //   path: "/success",
+        //   element: <Success />,
+        // },
+      ],
+    },
+  ]);
 
-  return (
-    <div className="app">
-      {/* <Navbar/> */}
-  <RouterProvider router={router}/>
-    </div>
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App  
+export default App;
