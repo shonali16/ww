@@ -35,7 +35,7 @@ const AboutUs = () => {
           </div>
           <div className="team-member">
             <img src="public/img/womanPlaceholder.avif" alt="Team Member 3" />
-            <span className="name">Ramanpreet Kaur</span>
+            <span className="name">Ramandeep Kaur</span>
             <span className="role">Web Developer</span>
           </div>
         </div>
